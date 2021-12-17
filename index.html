@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <SCRIPT language=JavaScript>
+
+<!-- http://www.spacegun.co.uk -->
+
+var message = "😜😜😜Sorry This Function Is Disabled";
+
+function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+
+if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+
+document.onmousedown = rtclickcheck;
+
+</SCRIPT>
+
+<script type="text/javascript">
+    function mousehandler(e) {
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if ((eventbutton == 2) || (eventbutton == 3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    function disableCtrlKeyCombination(e) {
+        var forbiddenKeys = new Array("a", "s", "c", "x","u");
+        var key;
+        var isCtrl;
+        if (window.event) {
+            key = window.event.keyCode;
+            //IE
+            if (window.event.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        else {
+            key = e.which;
+            //firefox
+            if (e.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        if (isCtrl) {
+            for (i = 0; i < forbiddenKeys.length; i++) {
+                //case-insensitive comparation
+                if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+</script>
+      <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <!-- =====Favicon===== -->
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+        <title>Arjun Pankhaniya</title>
+    </head>
+    <body oncontextmenu="return false">
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Arjun Pankhaniya</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Arjun</span><br> Back End Developer</h1>
+
+                    <a href="mailto: arjun.pankhaniya@com" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://youtube.com/channel/UCLcrWEnqvK25lKZ_D68d-Ww" class="home__social-icon"><i class='bx bxl-youtube'></i></a>
+                  <a href="https://github.com/arjunpankhaniya" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/profile.png" alt="mypfp">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg"  style="width:510px;height:600PX" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'm Arjun</h2>
+                        <p class="about__text">Hello👋,
+<br/>
+I Am Just A Normal Human With Breathing Enabled .
+<br/>
+Mostly I Listen to music & enjoy reading books and enjoying life and balancing career and more.Like to go and hang out with friends, Always busy, You can’t become the best without first being the worst. The best things in life are really expensive,You can have me for $7 billion dollar kthxbye😁</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                       <!-- <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        --><div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">55%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">45%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills__data">
+
+                            <div class="skills__names">
+
+                                <i class='bx bxl-python skills__icon'></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__python">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">15%</span>
+                            </div>
+                        
+                        
+                        
+                    </div>
+                    
+                 
+                </div>
+            </section>
+
+
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Arjun Pankhaniya</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/arjunpankhaniya" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/arjunpankhaniya" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.twitter.com/arjunpankhaniya" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://t.me/arjunpankhaniya" class="footer__icon"><i class='bx bxl-telegram' ></i></a>
+            </div
+            <p>&#169; 2021 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
