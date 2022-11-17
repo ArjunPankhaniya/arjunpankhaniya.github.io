@@ -15,45 +15,15 @@ document.onmousedown = rtclickcheck;
 
 </SCRIPT>
 
-<script type="text/javascript">
-    function mousehandler(e) {
-        var myevent = (isNS) ? e : event;
-        var eventbutton = (isNS) ? myevent.which : myevent.button;
-        if ((eventbutton == 2) || (eventbutton == 3)) return false;
-    }
-    document.oncontextmenu = mischandler;
-    document.onmousedown = mousehandler;
-    document.onmouseup = mousehandler;
-    function disableCtrlKeyCombination(e) {
-        var forbiddenKeys = new Array("a", "s", "c", "x","u");
-        var key;
-        var isCtrl;
-        if (window.event) {
-            key = window.event.keyCode;
-            //IE
-            if (window.event.ctrlKey)
-                isCtrl = true;
-            else
-                isCtrl = false;
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript"> $(function () { $(this).bind("contextmenu", function (e) { e.preventDefault(); }); }); </script>
+   <script>
+document.onkeydown = function(e) {
+        if (e.ctrlKey &&
+            (e.keyCode === 85 )) {
+            return false;
         }
-        else {
-            key = e.which;
-            //firefox
-            if (e.ctrlKey)
-                isCtrl = true;
-            else
-                isCtrl = false;
-        }
-        if (isCtrl) {
-            for (i = 0; i < forbiddenKeys.length; i++) {
-                //case-insensitive comparation
-                if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
+};
 </script>
       <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -124,7 +94,7 @@ document.onmousedown = rtclickcheck;
 <br/>
 I Am Just A Normal Human With Breathing Enabled .
 <br/>
-Mostly I Listen to music & enjoy reading books and enjoying life and balancing career and more.Like to go and hang out with friends, Always busy, You can’t become the best without first being the worst. The best things in life are really expensive,You can have me for $7 billion dollar kthxbye😁</p>           
+Mostly I Listen to music & enjoy reading books and enjoying life and balancing career and more.Like to go and hang out with friends, Always busy, You can’t become the best without first being the worst. The best things in life are really expensive,You can have me for $8 billion dollar kthxbye😁</p>           
                     </div>                                   
                 </div>
             </section>
