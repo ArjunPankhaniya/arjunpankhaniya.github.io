@@ -289,22 +289,22 @@ img{
   z-index: var(--z-back);
 }
 .skills__html{
-  width: 95%;
-}
-.skills__css{
   width: 65%;
 }
+.skills__css{
+  width: 55%;
+}
 .skills__js{
-  width: 45%;
+  width: 50%;
 }
 .skills__ux{
-  width: 25%;
+  width: 45%;
 }
 .skills__img{
   border-radius: .5rem;
 }
 .skills__python{
-  width: 5%;
+  width: 45%;
 }
 
 /* ===== WORK =====*/
@@ -346,6 +346,7 @@ img{
 
 /* ===== FOOTER =====*/
 .footer{
+  width: 100%;
   background-color: var(--second-color);
   color: #fff;
   text-align: center;
@@ -360,7 +361,7 @@ img{
   margin-bottom: var(--mb-4);
 }
 .footer__icon{
-  font-size: 1.5rem;
+  font-size: 2.0rem;
   color: #fff;
   margin: 0 var(--mb-2)
 }
