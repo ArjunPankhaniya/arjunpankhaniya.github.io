@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YSBHB4DTKB"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti Kanging Script</title>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        // Prevent right-click and context menu
+        $(function () {
+            $(document).bind("contextmenu", function (e) {
+                e.preventDefault();
+                alert("This Function Is Disabled Sorry😜😜😜");
+            });
+        });
 
-      gtag('config', 'G-YSBHB4DTKB');
-    </script>
-    <script language=JavaScript>
-
-    <!-- http://www.spacegun.co.uk -->
-
-    var message = "😜😜😜Sorry This Function Is Disabled";
-
-    function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
-
-    if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
-
-    document.onmousedown = rtclickcheck;
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
-        <script type="text/javascript" language="javascript"> $(function () { $(this).bind("contextmenu", function (e) { e.preventDefault(); }); }); </script>
-       <script>
-    document.onkeydown = function(e) {
-            if (e.ctrlKey &&
-                (e.keyCode === 85 )) {
-                return false;
+        // Prevent certain keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'I' || e.key === 'U' || e.key === 'J')) {
+                e.preventDefault();
             }
-    };
+            if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) {
+                e.preventDefault();
+            }
+        });
+
+        // Detect Developer Tools opening
+        var threshold = 160;
+        window.addEventListener('resize', function() {
+            if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+                alert('Developer tools are open! Please Close it');
+                window.location.reload();
+            }
+        });
+
+        // Detect console usage
+        function detectDevTools() {
+            const devtools = /./;
+            devtools.toString = function() {
+                alert('Developer tools are open! Please Close it');
+            };
+            console.log(devtools);
+        }
+        
+        detectDevTools();
     </script>
+
       <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -125,19 +141,19 @@
 
                 <div class="skills__container bd-grid">          
                     <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <h2 class="skills__subtitle">Professional Skills</h2>
                        <p class="skills__text">The Graph Represents The Skills in Percentage.</p>
                         
                         <div class="skills__data">
                         
                             <div class="skills__names">
                                 <i class='bx bxl-python skills__icon'></i>
-                                <span class="skills__name">PYTHON</span>
+                                <span class="skills__name">JAVA</span>
                             </div>
-                            <div class="skills__bar skills__python">
+                            <div class="skills__bar skills__js">
                             </div>
                             <div>
-                                <span class="skills__percentage">45%</span>
+                                <span class="skills__percentage">70%</span>
                             </div>
                         </div>
                         
@@ -150,19 +166,19 @@
                         
                             </div>
                             <div>
-                                <span class="skills__percentage">45%</span>
+                                <span class="skills__percentage">70%</span>
                             </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-javascript skills__icon'></i>
-                                <span class="skills__name">JAVA</span>
+                                <span class="skills__name">PYTHON</span>
                             </div>
-                            <div class="skills__bar skills__js">
+                            <div class="skills__bar skills__python">
                         
                             </div>
                             <div>
-                                <span class="skills__percentage">50%</span>
+                                <span class="skills__percentage">70%</span>
                             </div>
                         </div>
 
@@ -175,7 +191,7 @@
                         
                             </div>
                             <div>
-                                <span class="skills__percentage">55%</span>
+                                <span class="skills__percentage">60%</span>
                             </div>
                         </div>
 
@@ -187,19 +203,24 @@
                             <div class="skills__bar skills__html">
                             </div>
                             <div>
-                                <span class="skills__percentage">65%</span>
+                                <span class="skills__percentage">60%</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-              <!--===== Resume =====-->
-            <section class="resume section" id="resume">
-                <h2 class="section-title">Resume</h2>
-                <div class="resume__container bd-grid">
-                	<p class="about__resume">
-                            <center><h1>To Download My Resume</h1><h1><a href="assets/resume/resume.pdf" src="assets/resume/resume.pdf" target="_blank">Click here</a></h1></center>
+        <!--===== Resume =====-->
+        <section class="resume section" id="resume">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume__container bd-grid">
+                <p class="about__resume">
+                    <center>
+                        <h1>Resume Preview</h1>
+                        <iframe src="assets/resume/resume.pdf" width="600" height="800" style="border:none;"></iframe>
+                        <h1>To Download in SOFTCOPY</h1>
+                        <h1><a href="assets/resume/resume.pdf" target="_blank">Click here</a></h1>
+                    </center>
 
             <!--===== Contact =====-->
             <section class="contact section" id="contact">

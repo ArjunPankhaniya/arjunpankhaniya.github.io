@@ -251,6 +251,8 @@ img{
 /* ===== SKILLS =====*/
 .skills__container{
   row-gap: 2rem;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 .skills__subtitle{
@@ -258,6 +260,7 @@ img{
 }
 .skills__text{
   margin-bottom: var(--mb-4);
+  
 }
 .skills__data{
   display: flex;
@@ -289,22 +292,22 @@ img{
   z-index: var(--z-back);
 }
 .skills__html{
-  width: 65%;
+  width: 60%;
 }
 .skills__css{
-  width: 55%;
+  width: 60%;
 }
 .skills__js{
-  width: 50%;
+  width: 70%;
 }
 .skills__ux{
-  width: 45%;
+  width: 70%;
 }
 .skills__img{
   border-radius: .5rem;
 }
 .skills__python{
-  width: 45%;
+  width: 70%;
 }
 
 /* ===== WORK =====*/
@@ -407,16 +410,26 @@ img{
   .home__data{
     align-self: flex-end;
   }
-  .home__social{
+  .home__social {
     padding-top: 0;
     padding-bottom: 2.5rem;
     flex-direction: row;
     align-self: flex-end;
-  }
-  .home__social-icon{
+    display: flex; /* Ensure flexbox layout is applied */
+}
+
+.home__social-icon {
     margin-bottom: 0;
     margin-right: var(--mb-4);
-  }
+    font-size: 50px; /* Adjust this value to change the size of the icons */
+    color: #000; /* Optional: Set the color of the icons */
+}
+
+/* Optional: Add hover effects or other styling as needed */
+.home__social-icon:hover {
+    color: #f00; /* Change icon color on hover (example) */
+}
+
   .home__img{
     width: 457px;
     bottom: 15%;
