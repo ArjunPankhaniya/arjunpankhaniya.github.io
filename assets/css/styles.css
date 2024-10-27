@@ -408,7 +408,7 @@ img{
     height: 100vh;
   }
   .home__data{
-    align-self: flex-end;
+    align-self: center;
   }
   .home__social {
     padding-top: 0;
