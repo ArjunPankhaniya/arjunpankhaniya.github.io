@@ -211,17 +211,35 @@
                 </div>
             </section>
         </main>
-        <!--===== Resume =====-->
-        <section class="resume section" id="resume">
-            <h2 class="section-title">Resume</h2>
-            <div class="resume__container bd-grid">
-                <p class="about__resume">
-                    <center>
-                        <h1>Resume Preview</h1>
-                        <iframe src="assets/resume/resume.pdf" width="600px" height="800px" style="border:none;"></iframe>
-                        <h1>To Download in SOFTCOPY</h1>
-                        <h1><a href="assets/resume/resume.pdf" target="_blank">Click here</a></h1>
-                    </center>
+            <!--===== Resume =====-->
+            <section class="resume section" id="resume">
+                <h2 class="section-title">Resume</h2>
+                <div class="resume__container bd-grid">
+                <div class="about__resume">
+                    <!-- PDF Preview -->
+                    <div class="resume__iframe-container">
+                    <iframe 
+                        src="assets/resume/resume.pdf" 
+                        class="resume__iframe" 
+                        title="Resume Preview"
+                    ></iframe>
+                    </div>
+            
+                    <!-- Fallback for Mobile or Unsupported Browsers -->
+                    <div class="resume__fallback">
+                    <p>Unable to preview the resume? <a href="assets/resume/resume.pdf" target="_blank"></a>.</p>
+                    </div>  
+            
+                    <!-- Download Section -->
+                    <div class="resume__download-container">
+                    <h1 class="resume__download-title"></h1>
+                    <a href="assets/resume/resume.pdf" target="_blank" class="resume__download-link">Click to Download</a>
+                    </div>
+                </div>                
+                </div>
+            </section>
+  
+  
 
             <!--===== Contact =====-->
             <section class="contact section" id="contact">

@@ -184,6 +184,108 @@ img{
   right: 0;
 }
 
+/* Center the download title and link */
+.resume__download-container {
+  display: flex;
+  flex-direction: column; /* Stack title and link vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Ensure the text is centered */
+  margin-top: 1rem;
+}
+
+/* Style the download title */
+.resume__download-title {
+  font-size: 1.8rem; /* Adjust title size */
+  margin-bottom: 0.5rem; /* Add space between title and link */
+}
+
+/* Style the download link */
+.resume__download-link {
+  font-size: 1.5rem;
+  color: var(--link-color, #007bff); /* Link color */
+  text-decoration: none;
+}
+
+.resume__download-link:hover {
+  text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Make it responsive for smaller screens */
+@media screen and (max-width: 768px) {
+  .resume__download-title {
+    font-size: 1.6rem; /* Slightly smaller font for mobile */
+  }
+
+  .resume__download-link {
+    font-size: 1.4rem; /* Slightly smaller font for mobile */
+  }
+}
+
+.resume__fallback {
+  display: none; /* Hide fallback by default */
+}
+
+@media screen and (max-width: 768px) {
+  .resume__iframe-container {
+    display: none; /* Hide iframe on unsupported screens */
+  }
+  .resume__fallback {
+    display: block; /* Show fallback link */
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+  /* Adjust the overall padding for mobile */
+  .resume__container {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  /* Adjust the height of the iframe container if visible on larger screens */
+  .resume__iframe {
+    height: auto; /* Allow the iframe to resize properly */
+  }
+
+  /* Reduce space between download title and link */
+  .resume__download-container {
+    margin-top: 1rem; /* Reduce the space for download section */
+  }
+
+  .resume__download-title {
+    margin-bottom: 0.3rem; /* Reduced space between title and link */
+  }
+}
+
+
+/* Ensure iframe is responsive */
+.resume__iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.resume__iframe {
+  width: 100%; /* Full width */
+  max-width: 600px; /* Limit max-width */
+  height: 80vh; /* Responsive height */
+  border: none;
+}
+
+/* Additional general styling */
+.resume__container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.resume__container .about__resume {
+  margin-top: 2rem;
+}
+
+
+
+
 /*===== HOME =====*/
 .home{
   height: calc(100vh - 3rem);
