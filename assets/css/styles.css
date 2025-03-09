@@ -393,23 +393,24 @@ img{
   border-radius: .5rem;
   z-index: var(--z-back);
 }
-.skills__html{
-  width: 60%;
-}
-.skills__css{
-  width: 60%;
+
+.skills__flutter{
+  width: 70%;
 }
 .skills__js{
   width: 70%;
 }
-.skills__ux{
+.skills__python{
   width: 70%;
+}
+.skills__ui{
+  width: 60%;
 }
 .skills__img{
   border-radius: .5rem;
 }
-.skills__python{
-  width: 70%;
+.skills__html{
+  width: 60%;
 }
 
 /* ===== WORK =====*/
