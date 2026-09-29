@@ -1,0 +1,18 @@
+:root{--bg:#F2F4F8;--surface:#fff;--border:#D3DAE8;--ink:#101B33;--muted:#5A6580;--mari:#F4A300;--dark:#8A5600}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:'Instrument Sans','Segoe UI',sans-serif;line-height:1.75}
+a{color:var(--dark);text-decoration:underline;text-underline-offset:3px}
+.lnav{display:flex;justify-content:space-between;align-items:center;padding:16px 56px;border-bottom:1px solid var(--border);background:rgba(242,244,248,.92);position:sticky;top:0;backdrop-filter:blur(14px);z-index:10}
+.lnav .logo{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.4rem;letter-spacing:-.02em;color:var(--ink);text-decoration:none;background:linear-gradient(transparent 62%,var(--mari) 62%);padding:0 4px}
+.lnav a.back{font-size:.92rem;font-weight:500;color:var(--muted);text-decoration:none}
+.lwrap{max-width:780px;margin:0 auto;padding:64px 24px 96px}
+h1{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(2.4rem,6vw,3.8rem);letter-spacing:-.035em;line-height:1;padding-bottom:16px;border-bottom:1.5px solid var(--ink)}
+.upd{color:var(--muted);font-size:.9rem;margin:14px 0 32px}
+h2{font-family:'Bricolage Grotesque',sans-serif;font-size:1.25rem;font-weight:700;letter-spacing:-.01em;margin:36px 0 8px}
+p{margin-bottom:12px;color:#33405e}
+ul{margin:0 0 12px 22px;color:#33405e}li{margin-bottom:6px}
+.box{padding:14px 18px;background:#FFF1CC;border-left:3px solid var(--mari);border-radius:0 6px 6px 0;margin:14px 0;font-size:.95rem;color:#33405e}
+.lfoot{border-top:1px solid var(--border);padding:24px 56px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.85rem;color:var(--muted)}
+.lfoot a{margin-left:18px;color:var(--muted);text-decoration:none}.lfoot a:hover{color:var(--ink)}
+:focus-visible{outline:2px solid var(--mari);outline-offset:3px}
+@media(max-width:640px){.lnav,.lfoot{padding:14px 20px}}
