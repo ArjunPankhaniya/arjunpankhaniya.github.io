@@ -26,10 +26,10 @@
 
 Hey! I'm **Arjun Pankhaniya**, a passionate Flutter Developer from India 🇮🇳
 
-* 📱 2+ production mobile apps built
+* 📱 3+ production mobile apps built
 * 🔥 Skilled in Flutter, Firebase, APIs & Razorpay
 * 📊 Focused on performance & real-world impact
-* 🚀 Currently building **Kishan Funding (Fintech App)**
+* 🚀 Currently shipping **Kishan Funding (Fintech App)** and **Jayshree Glow Up Studio (Rental App)**
 
 ---
 
@@ -78,6 +78,16 @@ Hey! I'm **Arjun Pankhaniya**, a passionate Flutter Developer from India 🇮�
 
 ---
 
+### 👗 Jayshree Glow Up Studio
+
+> Clothing-rental enquiry app (customer app + admin panel), live on Google Play
+
+* Flutter + Firebase (Auth, Firestore, Storage, Cloud Functions, FCM)
+* Role-based security rules, App Check, account deletion
+* Push notifications, date-based availability, 115+ tests
+
+---
+
 ### 🛍️ Shivay's Creation
 
 > E-commerce Flutter app
@@ -100,7 +110,7 @@ Hey! I'm **Arjun Pankhaniya**, a passionate Flutter Developer from India 🇮�
 ## 📈 Achievements
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Apps%20Delivered-2+-brightgreen?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Apps%20Delivered-3+-brightgreen?style=for-the-badge">
   <img src="https://img.shields.io/badge/User%20Retention-+25%25-success?style=for-the-badge">
   <img src="https://img.shields.io/badge/Payment%20Failures--20%25-critical?style=for-the-badge">
   <img src="https://img.shields.io/badge/Devices%20Supported-10+-blue?style=for-the-badge">
